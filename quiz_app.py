@@ -2,7 +2,7 @@ import streamlit as st
 import google.generativeai as genai
 
 #  CONFIGURE GEMINI
-genai.configure(api_key="AIzaSyDxZiX1wsjX3i2aGDsk9mssDSgYoiA0_5w")
+genai.configure(api_key="")
 
 # FETCH QUESTIONS
 def fetch_questions():
@@ -110,4 +110,5 @@ if st.session_state.quiz_completed:
         for key in list(st.session_state.keys()):
             del st.session_state[key]
         st.experimental_rerun()
+
 
